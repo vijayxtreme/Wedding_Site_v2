@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN CSS */
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+	color: #E4AE82;
+}
+
+header {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+  height: 170px;
+}
+
+header ul {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+header ul li {
+  display: inline;
+  color: #76596B;
+    /*padding: 0 20px;*/
+  font-size: 1.75em;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header ul a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #76596B;
+}
+
+#centerpiece {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid #DC9D96;
+}
+
+.reception {
+  height: 60px;
+  text-align:center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bolder;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 a {
+  background-color: #DC9D96;
+  color: white;
+  border: 1px solid #DC9D96;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #5F5F5F;
+}
+
+h2 a:hover {
+  background-color: #DC9D96;
+  color: white;
+  border: 1px solid #DC9D96;
+  opacity: 0.7;
+}
+
+/* Story */
+
+.story-header {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+  font-size: 4em;
+	color: #E4AE82;
+}
+
+.story-img {
+  display: block;
+  float: left;
+	margin: 20px 9%;
+  border-radius: 10px;
+  border: 3px solid #DC9D96;
+	width: 40%;
+}
+
+.story-container {
+	width: 100%;
+}
+
+.story-story {
+	font-size: 1em;
+	font-weight: bolder;
+	color: #DC9D96;
+	font-family: 'Montserrat', sans-serif;
+	width: 30%;
+	float: left;
+	margin: 20px 40px;
+	line-height: 30px;
+}
+
+/* Information */
+
+.info-container {
+	min-height: 900px;
+}
+
+#map {
+	margin: 0 auto;
+	height: 500px;
+	width: 80%;
+	border: 3px solid #DC9D96;
+}
+
+.info-address {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 1.5em;
+	color: #DC9D96;
+}
+
+@media screen and (max-width: 667px) {
+
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 260px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  header ul a {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  header ul a:hover {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  header ul li {
+    display: block;
+    padding: 10px;
+    background-color: #76596B;
+    border-radius: 5px;
+    line-height: 18px;
+    color: white;
+    font-size: 1.25em;
+  }
+
+  header ul li:hover {
+    color: #76596B;
+    background-color: white;
+		border: 2px solid #76596B;
+  }
+
+  .reception {
+    height: 40px;
+    text-align:center;
+    margin: 0 auto;
+    max-width: 320px;
+
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+  img {
+    margin-top: 40px;
+  }
+
+	/* STORY */
+
+	.story-img {
+	  display: block;
+		margin: 0 9%;
+	  border-radius: 10px;
+	  border: 3px solid #DC9D96;
+		width: 80%;
+	}
+
+	.story-story {
+		font-size: 1em;
+		font-weight: bolder;
+		color: #DC9D96;
+		font-family: 'Montserrat', sans-serif;
+		float: left;
+		margin: 20px 9%;
+		line-height: 30px;
+		text-align: center;
+		width: 75%;
+	}
+
+}
