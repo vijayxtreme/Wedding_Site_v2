@@ -2,7 +2,7 @@ var Navigation = function() {
   this.nav = document.createElement('nav');
   this.ul = document.createElement('ul');
 
-  this.navItems = ['story', 'information'];
+  this.navItems = ['story', 'information', 'reservation', 'photos'];
   this.home = document.createElement('li');
   this.home.innerHTML = 'HOME';
   var a = document.createElement('a');
@@ -14,7 +14,12 @@ var Navigation = function() {
     var li = document.createElement('li');
     li.innerHTML = item.toUpperCase();
     var a = document.createElement('a');
+    if(item == "photos"){
+      a.href = 'http://indianweddingsnap.pixieset.com/priyaandnaveen/';
+      a.target = '_blank';
+    } else {
     a.href = item + ".html";
+    }
     a.appendChild(li);
     this.ul.appendChild(a);
   }.bind(this));
