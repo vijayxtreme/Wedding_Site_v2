@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/skeleton.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <title>Wedding Site V2</title>
   </head>
@@ -10,16 +12,18 @@
     <header class="reservation-header">
       <h1>RESERVATION</h1>
     </header>
-    <section class="reservation-container">
-      <div class="reservation-info">Wedding</div>
-      <img class="lulu" src="img/lulu.jpg"/>
-      <div class="hotel-info"><a href="http://luluicc.in/" target="_blank">Book Hotel Room</a></div>
-    </section>
-    <section class="reservation-container2">
-      <div class="reservation-info2">Reception</div>
-      <img class="lulu" src="img/sheraton.jpg"/>
-      <div class="hotel-info"><a href="http://www.starwoodhotels.com/fourpoints/property/overview/index.html?propertyID=3437&language=en_US" target="_blank">Book Hotel Room</a></div>
-    </section>
+    <div class="row">
+      <div class="one-half column">
+        <div class="reservation-info">Wedding</div>
+        <img class="lulu" src="img/lulu.jpg"/>
+        <a class="button button-primary reservation-btn" href="http://luluicc.in/">Book Hotel Room</a>
+      </div>
+      <div class="one-half column">
+        <div class="reservation-info2">Reception</div>
+        <img class="lulu" src="img/sheraton.jpg"/>
+        <a class="button button-primary reservation-btn" href="http://www.starwoodhotels.com/fourpoints/property/overview/index.html?propertyID=3437&language=en_US">Book Hotel Room</a>
+      </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
