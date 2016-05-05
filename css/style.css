@@ -203,6 +203,8 @@ body.info-main {
 	color: #DC9D96;
 	border: 3px dotted #DC9D96;
 	padding: 10px;
+	font-style: italic;
+	margin-bottom: 50px;
 }
 
 span.wedding {
@@ -216,10 +218,10 @@ span.wedding {
 
 img.lulu {
 	width: 400px;
-	margin-left: 30px;
 	border: 2px solid #DC9D96;
 	border-radius: 5px;
-	margin-left: 14.5%;
+	display: block;
+	margin: 30px auto;
 }
 
 .reservation-info {
@@ -270,7 +272,7 @@ img.lulu {
   }
 
   header {
-    height: 200px;
+    height: 300px;
   }
 
   header h1 {
@@ -335,6 +337,33 @@ img.lulu {
 		height: 300px;
 	}
 
+	.info-intro {
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		margin-top: 50px;
+		font-size: 1.5em;
+		color: #DC9D96;
+	}
+
+	.info-address {
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		margin-top: 50px;
+		font-size: 1.25em;
+		color: #DC9D96;
+		border: 3px dotted #DC9D96;
+		padding: 10px;
+		margin-bottom: 50px;
+		font-style: italic;
+	}
+
+	span.wedding {
+		display: inline-block;
+		font-size: 1.25em;
+		text-decoration: underline;
+		margin-bottom: 20px;
+	}
+
 	/* STORY */
 
 	.story-img {
@@ -362,23 +391,10 @@ img.lulu {
 		height: 300px;
 	}
 
-	/*.reservation-container {
-		width: 30%;
-		float: left;
-		margin-left: 0;
-
-	}
-
-	.reservation-container2 {
-		float: left;
-		width: 30%;
-		clear: both;
-		margin-left: 0;
-	}*/
-
 	img.lulu {
 		width: 350px;
-		margin-left: 30px;
+		display: block;
+		margin: 30px auto;
 		border: 2px solid #DC9D96;
 		border-radius: 5px;
 	}
