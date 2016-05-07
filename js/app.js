@@ -1,6 +1,7 @@
 var Navigation = function() {
   this.nav = document.createElement('nav');
   this.ul = document.createElement('ul');
+  this.ul.setAttribute('id', 'subnav');
 
   this.navItems = ['story', 'information', 'reservation', 'photos'];
   this.home = document.createElement('li');
@@ -29,3 +30,15 @@ var Navigation = function() {
 };
 
 new Navigation();
+
+$(document).ready(function(){
+  $('#subnav a').each(function(index){
+    if(this.href.trim() == window.location){
+      var item = $(this);
+        item.addClass('selected');
+        item.addClass('selected:hover');
+        item.css('color', 'white');
+        item.css('border-bottom', 'none');
+    }
+  });
+});
