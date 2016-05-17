@@ -17,7 +17,7 @@ var Navigation = function() {
     var a = document.createElement('a');
     if(item == "photos"){
       a.href = '#';
-      a.target = '_blank';
+     // a.target = '_blank';
     } else {
     a.href = item + ".html";
     }
