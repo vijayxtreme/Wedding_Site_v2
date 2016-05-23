@@ -1,4 +1,6 @@
-var Navigation = function() {
+//nav
+(function(){
+  var Navigation = function() {
   this.nav = document.createElement('nav');
   this.ul = document.createElement('ul');
   this.ul.setAttribute('id', 'subnav');
@@ -23,9 +25,10 @@ var Navigation = function() {
   this.header = document.getElementsByTagName('header')[0];
   this.header.appendChild(this.ul);
 };
+  new Navigation();
 
-new Navigation();
-
+}());
+//selection
 $(document).ready(function(){
   $('#subnav a').each(function(index){
     if(this.href.trim() == window.location){
@@ -37,3 +40,26 @@ $(document).ready(function(){
     }
   });
 });
+
+//carousel
+(function(){
+
+  var imgArray = [
+                  'Priya&Naveen-Norwalk-133.jpg',
+                  'Priya&Naveen-Norwalk-23.jpg',
+                  'Priya&Naveen-Norwalk-3.jpg',
+                  'Priya&Naveen-Norwalk-53.jpg',
+                  'Priya&Naveen-Norwalk-67.jpg',
+                  'Priya&Naveen-Norwalk-71.jpg',
+                  'Priya&Naveen-Norwalk-72.jpg',
+                  'Priya&Naveen-Norwalk-75.jpg'
+                  ];
+ for(var i=0; i<imgArray.length; i++){
+  var bgImg = 'url(img/'+imgArray[i]+')';
+  var div = $('<a href="img/'+imgArray[i]+'" rel="lightbox"><div></div></a>');
+
+  $(div).addClass('photo-img').css('background-image', bgImg);
+  $("#photos").append(div);
+ }
+
+}());
