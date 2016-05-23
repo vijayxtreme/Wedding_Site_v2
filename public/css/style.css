@@ -433,7 +433,7 @@ img.lulu {
 		width:calc(100% - 40px);
 		margin:0px;
 		line-height: 30px;
-		text-align: center;
+		text-align: justify;
 	}
 
 	/* RESERVATION */
