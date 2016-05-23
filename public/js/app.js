@@ -15,12 +15,7 @@ var Navigation = function() {
     var li = document.createElement('li');
     li.innerHTML = item.toUpperCase();
     var a = document.createElement('a');
-    if(item == "photos"){
-      a.href = '#';
-     // a.target = '_blank';
-    } else {
     a.href = item + ".html";
-    }
     a.appendChild(li);
     this.ul.appendChild(a);
   }.bind(this));

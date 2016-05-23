@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vijayxtreme/Wedding_Site_v2#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "nodemon": "^1.9.2"
   }
 }
