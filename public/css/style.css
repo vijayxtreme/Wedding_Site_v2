@@ -304,6 +304,12 @@ img.lulu {
 	max-width:720px;
 	margin-top:20px;
 }
+
+.honeymoon {
+	margin:0 auto;
+	width:80%;
+	text-align: center;
+}
 @media screen and (max-width: 992px){
 	#photos {
 		width:80%;
@@ -386,6 +392,8 @@ img.lulu {
 
   }
 
+
+
   h2 {
     font-size: 1em;
     font-weight: bolder;
@@ -455,7 +463,8 @@ img.lulu {
 
 	/* RESERVATION */
 	.reservation-header {
-		height: 300px;
+		margin-bottom: 20px;
+		//height: 300px;
 	}
 
 	img.lulu {
