@@ -5,7 +5,7 @@
   this.ul = document.createElement('ul');
   this.ul.setAttribute('id', 'subnav');
 
-  this.navItems = ['story', 'information', 'reservation', 'photos'];
+  this.navItems = ['story', 'information', 'reservation', 'photos', 'honeymoon'];
   this.home = document.createElement('li');
   this.home.innerHTML = 'HOME';
   var a = document.createElement('a');
@@ -43,7 +43,6 @@ $(document).ready(function(){
 
 //carousel
 (function(){
-
   var imgArray = [
                   'Priya&Naveen-Norwalk-133.jpg',
                   'Priya&Naveen-Norwalk-23.jpg',
@@ -61,5 +60,4 @@ $(document).ready(function(){
   $(div).addClass('photo-img').css('background-image', bgImg);
   $("#photos").append(div);
  }
-
 }());
