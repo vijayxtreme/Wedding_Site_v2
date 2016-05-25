@@ -152,7 +152,7 @@ h2 a:hover {
 .story-header {
 	text-align: center;
 	font-family: 'Lobster', cursive;
-  font-size: 4em;
+  font-size: 35px;
 	color: #E4AE82;
 }
 
@@ -547,5 +547,6 @@ img.lulu {
 		width:100%;
 		max-width: 300px;
 	}
+
 
 }
