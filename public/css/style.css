@@ -309,6 +309,25 @@ img.lulu {
 	margin:0 auto;
 	width:80%;
 	text-align: center;
+	margin-top: 10px;
+}
+
+.honeymoon h2 {
+	margin-top: 20px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.honeymoon p {
+	margin-bottom: 20px;
+}
+
+.honeymoon .happy-couple {
+	margin-top: 20px;
+}
+
+.honeymoon .happy-couple img{
+	width:300px;
+	height:410px;
 }
 @media screen and (max-width: 992px){
 	#photos {
@@ -517,6 +536,16 @@ img.lulu {
 		margin:5px 5px;
 		height:320px;
 		float:left;
+	}
+
+	.honeymoon .happy-couple {
+		width:80%;
+		margin:0 auto;
+		margin-top: 20px;
+	}
+	.honeymoon .happy-couple img{
+		width:100%;
+		max-width: 300px;
 	}
 
 }
