@@ -53,11 +53,21 @@ $(document).ready(function(){
                   'Priya&Naveen-Norwalk-72.jpg',
                   'Priya&Naveen-Norwalk-75.jpg'
                   ];
+
  for(var i=0; i<imgArray.length; i++){
   var bgImg = 'url(img/'+imgArray[i]+')';
-  var div = $('<a href="img/'+imgArray[i]+'" rel="lightbox"><div></div></a>');
+  var div = $('<a href="img/'+imgArray[i]+'" rel="lightbox" data-lightbox="roadtrip"><div></div></a>');
 
   $(div).addClass('photo-img').css('background-image', bgImg);
   $("#photos").append(div);
+
  }
 }());
+
+var lightbox = lightbox || undefined;
+if(lightbox){
+  lightbox.option({
+    'wrapAround':true,
+    'alwaysShowNavOnTouchDevices':true
+  })
+}
